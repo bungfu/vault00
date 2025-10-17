@@ -84,7 +84,7 @@ details.lyrics-details {
 }
 
 details.lyrics-details summary {
-  cursor: pointer;
+  cursor: none;
   font-size: 1.3em;
   font-weight: bold;
   outline: none;
