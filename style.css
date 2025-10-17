@@ -70,13 +70,12 @@ a.track-link:hover {
   font-size: 1.3em;
   font-weight: bold;
   color: #e10600;
-  text-decoration: underline;
   display: inline-block;
-  transition: all 0.2s ease;
 }
 
 .lyrics-heading:hover {
   font-style: italic;
+  text-decoration: underline;
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
@@ -96,7 +95,6 @@ a.download-link {
   font-weight: bold;
   color: #e10600;
   text-align: center;
-  text-decoration: underline;
   cursor: pointer;
   margin: 0 auto 25px;
   transition: all 0.2s ease;
@@ -104,6 +102,7 @@ a.download-link {
 
 a.download-link:hover {
   font-style: italic;
+  text-decoration: underline;
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
@@ -130,20 +129,3 @@ a.back-link:hover {
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
-/* Hover arrows for clickable elements */
-a.download-link:hover::before,
-a.track-link:hover::before,
-.lyrics-heading:hover::before {
-  content: '➤';       /* arrow character */
-  margin-right: 8px;  /* space between arrow and text */
-  color: #e10600;     /* same Tarantino red */
-}
-
-/* ensure pseudo-elements don't show by default */
-a.download-link::before,
-a.track-link::before,
-.lyrics-heading::before {
-  content: '';
-  display: inline-block;
-  width: 0;           /* keeps text from shifting */
-}
