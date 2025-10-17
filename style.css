@@ -43,10 +43,14 @@ h1 {
 }
 
 img.artwork {
-  max-width: 90%;
-  height: auto;
+  max-width: 400px;      /* caps the width at 400px */
+  width: 80%;             /* scales down on smaller screens */
+  height: auto;           /* maintains aspect ratio */
   border: 2px solid #00ff00;
   margin: 20px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;     /* centers the image */
 }
 
 audio {
