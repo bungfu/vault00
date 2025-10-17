@@ -66,6 +66,7 @@ a.download-link:hover {
   margin-top: 30px;
   display: block;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 a.back-link:hover {
