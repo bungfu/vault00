@@ -51,7 +51,7 @@ a.download-link {
   font-weight: bold;                 /* same as lyrics */
   color: #e10600;                    /* Tarantino-red */
   text-align: center;
-  margin: 15px auto 25px;
+  margin: 5px auto 25px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -99,7 +99,7 @@ details.lyrics-details summary:hover {
 .lyrics-block {
   margin-top: 15px;
   line-height: 1.6;       /* spacing between lines */
-  text-align: left;
+  text-align: center;
 }
 
 
