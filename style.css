@@ -44,11 +44,21 @@ a.track-link:hover {
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000; /* subtle glow */
 }
 
-.download-link {
+a.download-link {
   color: #e10600;
-  display: inline-block;
-  margin-top: 20px;
   text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px;
+  border: none; /* removes border */
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+
+a.download-link:hover {
+  text-decoration: underline;
+  font-style: italic;
+  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
 .back-link {
@@ -56,6 +66,12 @@ a.track-link:hover {
   margin-top: 30px;
   display: block;
   text-decoration: none;
+}
+
+a.back-link:hover {
+  text-decoration: underline;
+  font-style: italic;
+  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
 img.artwork {
