@@ -1,3 +1,4 @@
+/* General body styling */
 body {
   font-family: 'VT323', monospace;
   text-align: center;
@@ -8,31 +9,37 @@ body {
   padding: 20px;
 }
 
+/* General link styling */
 a {
   color: #e10600;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 a:hover {
   text-decoration: underline;
+  font-style: italic;
+  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
+/* Heading and list elements */
 h1, p, pre, .tracklist li {
   color: #e10600;
 }
 
+/* Tracklist styling */
 .tracklist {
-  list-style: none; /* hides bullets or numbers */
-  padding: 0;       /* remove default indentation */
+  list-style: none;
+  padding: 0;
   margin: 20px 0;
 }
 
 .tracklist li {
-  margin: 10px 0;   /* spacing between tracks */
+  margin: 10px 0;
 }
 
 a.track-link {
-  color: #e10600;             /* Tarantino red */
+  color: #e10600;
   text-decoration: none;
   transition: all 0.2s ease;
   font-size: 1.2em;
@@ -41,33 +48,79 @@ a.track-link {
 a.track-link:hover {
   text-decoration: underline;
   font-style: italic;
-  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000; /* subtle glow */
+  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
-a.download-link {
-  display: block;
-  font-family: 'VT323', monospace; /* same as lyrics */
-  font-size: 1.3em;                 /* match lyrics summary size */
-  font-weight: bold;                 /* same as lyrics */
-  color: #e10600;                    /* Tarantino-red */
-  text-align: center;
-  margin: 0px auto 25px;
+/* Lyrics + download list */
+.lyrics-download-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.lyrics-download-list li {
+  margin-bottom: 10px; /* spacing between lyrics and download */
+}
+
+/* Lyrics toggle heading */
+.lyrics-heading {
   cursor: pointer;
-  transition: all 0.2s ease;
+  font-family: 'VT323', monospace;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #e10600;
+  text-decoration: underline;
+  display: inline-block;
 }
 
-a.download-link:hover {
-  text-decoration: underline;
+.lyrics-heading:hover {
   font-style: italic;
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
-.back-link {
+/* Lyrics block */
+.lyrics-block {
+  margin-top: 10px;
+  line-height: 1.6;
+  text-align: center;
+  display: none; /* hidden by default, toggled via JS */
+}
+
+/* Download link styling */
+a.download-link {
+  display: block;
+  font-family: 'VT323', monospace;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #e10600;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0 auto 25px;
+  transition: all 0.2s ease;
+}
+
+a.download-link:hover {
+  font-style: italic;
+  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
+}
+
+/* Album art */
+img.artwork {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Back link */
+a.back-link {
   color: #e10600;
   margin-top: 30px;
   display: block;
   text-decoration: none;
-  transition: all 0.2s ease;
 }
 
 a.back-link:hover {
@@ -75,44 +128,3 @@ a.back-link:hover {
   font-style: italic;
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
-
-details.lyrics-details {
-  max-width: 600px;         /* keeps it readable */
-  margin: 20px auto;
-  font-family: 'VT323', monospace;
-  color: #e10600;
-}
-
-details.lyrics-details summary {
-  cursor: none;
-  font-size: 1.3em;
-  font-weight: bold;
-  outline: none;
-}
-
-details.lyrics-details summary:hover {
-  text-decoration: underline;
-  font-style: italic;
-  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
-}
-
-.lyrics-block {
-  margin-top: 15px;
-  margin-bottom: 0px;
-  line-height: 1.6;       /* spacing between lines */
-  text-align: center;
-}
-
-
-img.artwork {
-  width: 400px;      /* fixed width for all screens */
-  max-width: 90%;    /* just in case screen is very small */
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
-audio {
-  margin-top: 20px;
-}
-
