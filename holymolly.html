@@ -11,17 +11,97 @@
 
     <img src="assets/holymolly.jpg" alt="HOLY MOLLY Album Art" class="artwork">
 
-    <p><strong>lyrics</strong></p>
-    <pre style="white-space: pre-wrap; text-align:left; max-width:600px; margin: 0 auto;">
-Write your HOLY MOLLY lyrics here...
-    </pre>
+    <ul class="lyrics-download-list">
+      <li>
+        <div class="lyrics-toggle">
+          <strong class="lyrics-heading">lyrics</strong>
+          <div class="lyrics-block" style="display:none;">
+            ay, what's it with all the tension?<br>
+            all you motherfuckers want is attention<br>
+            two fake smiles for a mention<br>
+            no real clout fuck that's demented<br>
+            move me to another dimension<br>
+            suicide never been the intention<br>
+            i been down ever since my inception<br>
+            i been real i been keeping it precious<br>
+             <br>
+            i been cut, i been keeping it raw<br>
+            are you kidding me, are you sure?<br>
+            no I'm not, yes, oh my lord<br>
+            put em up let's settle the -<br>
+             <br>
+            bag you up and send you on your way<br>
+            loosen up, you been looking for change<br>
+            too far gone and you don't have the range<br>
+            could not meet her you could not gauge<br>
+             <br>
+            st vinnies from my neck down<br>
+            fangin for your feed that's a let down<br>
+            not white enough put the ket down<br>
+            shaky knees get another set down<br>
+             <br>
+            bag you up and send you on your way<br>
+            loosen up, you been looking for change<br>
+            too far gone and you don't have the range<br>
+            could not meet her you could not gauge<br>
+             <br>
+            this shit is a creeper, let it dig in deeper<br>
+            decked out in fila, messi on fifa<br>
+            my girl she a keeper<br>
+            no typical sheila, keeping it realer<br>
+            medicinal healer<br>
+            your grass is green, my grass is greener<br>
+            dressed all black like rieder, can't see me like cena, ay<br>
+             <br>
+            ain't nobody cleaner<br>
+            dean blunt the redeemer, follow the leader<br>
+            your girl looking keener, twist that top ribena<br>
+            dream on, dreamer<br>
+            sold out the arena, did it all no feature<br>
+            turn up the speaker, see you when I see ya<br>
+            cut you off in the kia, ay<br>
+             <br>
+            fuck it up on the one time<br>
+            fuck it up on the two time<br>
+            call me the two time<br>
+            blowing up on your timeline<br>
+            didn't read the whole guideline<br>
+            hop in the Skyline<br>
+            walking through on a fine line<br>
+            keep you off on the sideline<br>
+            driving a red light<br>
+            got some shit in the pipeline<br>
+            fuck it up with no lifeline, ay<br>
+             <br>
+            switched up from street to medicinal<br>
+            spirit so holy, it's biblical<br>
+            working got dirt in my cuticle<br>
+            vessel for heat I'm the crucible<br>
+            step back for the BUNG FU DYNASTY<br>
+            step forward ever so righteously<br>
+            reigning on top only rightfully<br>
+            loyalty leave you a casualty<br>
+          </div>
+        </div>
+      </li>
 
-    <p>
-      <a href="https://drive.google.com/uc?export=download&id=1eb7cpBoGCja5CbYHfVYUARjheRwzdXrm" class="download-link">
-         download holymolly.wav
-      </a>
-    </p>
+      <li>
+        <a href="https://drive.google.com/uc?export=download&id=1eb7cpBoGCja5CbYHfVYUARjheRwzdXrm" class="download-link">
+          download
+        </a>
+      </li>
+    </ul>
 
     <a href="index.html" class="back-link">⬅</a>
+
+    <script>
+      // Toggle lyrics visibility
+      document.querySelectorAll('.lyrics-heading').forEach(function(el){
+        el.addEventListener('click', function(){
+          const lyrics = el.nextElementSibling;
+          lyrics.style.display = lyrics.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+    </script>
   </body>
 </html>
