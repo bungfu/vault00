@@ -75,6 +75,30 @@ a.back-link:hover {
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
+.lyrics-columns {
+  max-width: 1000px;         /* width of lyrics container */
+  margin: 0 auto;             /* center on page */
+  color: #e10600;             /* Tarantino-red */
+  font-family: 'VT323', monospace;
+  line-height: 1.6;           /* spacing between lines */
+  column-count: 3;            /* 3 vertical columns */
+  column-gap: 40px;           /* space between columns */
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .lyrics-columns {
+    column-count: 2;          /* 2 columns on tablet */
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lyrics-columns {
+    column-count: 1;          /* 1 column on mobile */
+  }
+}
+
 img.artwork {
   width: 400px;      /* fixed width for all screens */
   max-width: 90%;    /* just in case screen is very small */
