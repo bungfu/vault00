@@ -11,10 +11,11 @@
 
     <img src="assets/dynasty.png" alt="DYNASTY Album Art" class="artwork">
     
-      <details class="lyrics-details">
-        <summary><strong>lyrics</strong></summary>
-    
-        <div class="lyrics-block">
+    <ul class="lyrics-download-list">
+      <li>
+        <div class="lyrics-toggle">
+          <strong class="lyrics-heading">lyrics</strong>
+          <div class="lyrics-block" style="display:none;">
           yeah, hold it down for my crew<br>
           you can't do what we do<br>
           i do me, you do you<br>
@@ -69,14 +70,27 @@
           hit em like majin buu<br>
           break face, make way<br>
           DYNASTY OF BUNG FU<br>
+          </div>
         </div>
-      </details>
-      
-      <a href="https://drive.google.com/uc?export=download&id=1qA3SgJZAJFsK5khsgqtu2iryDbbhhHJu" class="download-link">
-         download
-      </a>
+      </li>
 
+      <li>
+        <a href="https://drive.google.com/uc?export=download&id=1qA3SgJZAJFsK5khsgqtu2iryDbbhhHJu" class="download-link">
+          download
+        </a>
+      </li>
+    </ul>
 
     <a href="index.html" class="back-link">⬅</a>
+
+    <script>
+      // Toggle lyrics visibility
+      document.querySelectorAll('.lyrics-heading').forEach(function(el){
+        el.addEventListener('click', function(){
+          const lyrics = el.nextElementSibling;
+          lyrics.style.display = lyrics.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+    </script>
   </body>
 </html>
