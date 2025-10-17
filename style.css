@@ -45,13 +45,14 @@ a.track-link:hover {
 }
 
 a.download-link {
-  color: #e10600;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  border-radius: 8px;
-  border: none; /* removes border */
-  margin-top: 20px;
+  display: block;
+  font-family: 'VT323', monospace; /* same as lyrics */
+  font-size: 1.3em;                 /* match lyrics summary size */
+  font-weight: bold;                 /* same as lyrics */
+  color: #e10600;                    /* Tarantino-red */
+  text-align: center;
+  margin: 15px auto 25px;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
@@ -87,10 +88,11 @@ details.lyrics-details summary {
   font-size: 1.3em;
   font-weight: bold;
   outline: none;
-  text-decoration: underline;
 }
 
 details.lyrics-details summary:hover {
+  text-decoration: underline;
+  font-style: italic;
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
