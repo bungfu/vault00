@@ -2,14 +2,23 @@ body {
   font-family: 'VT323', monospace;
   text-align: center;
   background-color: #000;
-  color: #00ff00;
-  text-shadow: 0 0 6px #00ff00;
+  color: #e10600; /* Tarantino-style red */
+  text-shadow: 0 0 6px #e10600;
   margin: 0;
   padding: 20px;
 }
 
-h1 {
-  margin-top: 20px;
+a {
+  color: #e10600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, p, pre, .tracklist li {
+  color: #e10600;
 }
 
 .tracklist {
