@@ -129,25 +129,27 @@ a.back-link:hover {
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
-/* Hover arrows for clickable elements — clean VT323 style */
-a.download-link:hover::before,
-a.track-link:hover::before,
-.lyrics-heading:hover::before {
-  content: '›';             /* smaller arrow for minimal clash */
-  margin-right: 12px;       /* space between arrow and text */
-  color: #e10600;
-  text-shadow: 0 0 6px #e10600, 0 0 8px #ff0000; /* subtle glow */
-  font-size: 1em;           /* matches text size */
-  vertical-align: middle;   /* keeps arrow aligned with text */
-}
-
-/* ensure pseudo-elements are invisible by default */
+/* Hover arrows for clickable elements — no extra space when not hovered */
 a.download-link::before,
 a.track-link::before,
 .lyrics-heading::before {
-  content: '';
+  content: '';               /* empty by default */
   display: inline-block;
-  width: 0;                /* prevents text shifting */
+  width: 0;                  /* ensures no spacing */
+  margin-right: 0;           /* remove any default margin */
 }
+
+/* Arrow appears on hover */
+a.download-link:hover::before,
+a.track-link:hover::before,
+.lyrics-heading:hover::before {
+  content: '›';             /* arrow character */
+  margin-right: 12px;       /* space only when visible */
+  color: #e10600;
+  text-shadow: 0 0 6px #e10600, 0 0 8px #ff0000;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
 
 
