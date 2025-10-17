@@ -128,3 +128,23 @@ a.back-link:hover {
   font-style: italic;
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
+
+/* Hover arrows for clickable elements */
+a.download-link:hover::before,
+a.track-link:hover::before,
+.lyrics-heading:hover::before {
+  content: '➤';       /* arrow character */
+  margin-right: 8px;  /* space between arrow and text */
+  color: #e10600;     /* same Tarantino red */
+}
+
+/* ensure pseudo-elements don't show by default */
+a.download-link::before,
+a.track-link::before,
+.lyrics-heading::before {
+  content: '';
+  display: inline-block;
+  width: 0;           /* keeps text from shifting */
+}
+
+
