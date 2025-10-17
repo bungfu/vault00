@@ -75,29 +75,40 @@ a.back-link:hover {
   text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
 }
 
-.lyrics-columns {
-  max-width: 1000px;         /* width of lyrics container */
-  margin: 0 auto;             /* center on page */
-  color: #e10600;             /* Tarantino-red */
+details.lyrics-details {
+  max-width: 1000px;
+  margin: 20px auto;
   font-family: 'VT323', monospace;
-  line-height: 1.6;           /* spacing between lines */
-  column-count: 3;            /* 3 vertical columns */
-  column-gap: 40px;           /* space between columns */
-  text-align: left;
+  color: #e10600;
+}
+
+details.lyrics-details summary {
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: bold;
+  outline: none;
+  text-decoration: underline;
+}
+
+details.lyrics-details summary:hover {
+  text-shadow: 0 0 8px #e10600, 0 0 12px #ff0000;
+}
+
+.lyrics-columns {
+  column-count: 3;
+  column-gap: 40px;
+  line-height: 1.6;
+  margin-top: 15px;
 }
 
 @media (max-width: 900px) {
-  .lyrics-columns {
-    column-count: 2;          /* 2 columns on tablet */
-    column-gap: 30px;
-  }
+  .lyrics-columns { column-count: 2; column-gap: 30px; }
 }
 
 @media (max-width: 600px) {
-  .lyrics-columns {
-    column-count: 1;          /* 1 column on mobile */
-  }
+  .lyrics-columns { column-count: 1; }
 }
+
 
 img.artwork {
   width: 400px;      /* fixed width for all screens */
